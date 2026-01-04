@@ -93,7 +93,7 @@ The game has sound effects for:
 
 ## 📜 Credits
 
-Made with ❤️ using the [Godot Engine](https://godotengine.org/)
+Made by YiorZhe
 
 ---
 
