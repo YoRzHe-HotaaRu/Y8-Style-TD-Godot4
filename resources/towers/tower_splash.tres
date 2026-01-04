@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="TowerData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/tower_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Splash Tower"
+cost = 75
+damage = 15
+attack_speed = 0.8
+range_radius = 120.0
+projectile_speed = 300.0
+color = Color(0.95, 0.5, 0.1, 1)
+size = 28.0
+targeting_mode = 4
+shape = 2
+splash_radius = 60.0

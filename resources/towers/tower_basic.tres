@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="TowerData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/tower_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+display_name = "Basic Tower"
+cost = 50
+damage = 25
+attack_speed = 1.0
+range_radius = 150.0
+projectile_speed = 400.0
+color = Color(0.2, 0.4, 0.9, 1)
+size = 24.0
+targeting_mode = 0
+shape = 0
+splash_radius = 0.0

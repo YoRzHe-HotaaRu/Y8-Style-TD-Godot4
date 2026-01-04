@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 16">
+  <!-- Projectile - Energy bullet -->
+  <defs>
+    <radialGradient id="bulletGrad" cx="60%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffee"/>
+      <stop offset="40%" style="stop-color:#ffdd44"/>
+      <stop offset="80%" style="stop-color:#ff8800"/>
+      <stop offset="100%" style="stop-color:#ff4400;stop-opacity:0.5"/>
+    </radialGradient>
+    <linearGradient id="trailGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff8800;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#ff8800;stop-opacity:0.6"/>
+    </linearGradient>
+  </defs>
+  <!-- Trail -->
+  <ellipse cx="8" cy="8" rx="8" ry="4" fill="url(#trailGrad)"/>
+  <!-- Main bullet -->
+  <ellipse cx="20" cy="8" rx="10" ry="5" fill="url(#bulletGrad)"/>
+  <!-- Core glow -->
+  <ellipse cx="22" cy="8" rx="4" ry="2" fill="#ffffff" opacity="0.8"/>
+</svg>

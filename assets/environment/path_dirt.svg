@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Path Tile - Dirt road with cobblestones -->
+  <defs>
+    <linearGradient id="dirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b6914"/>
+      <stop offset="50%" style="stop-color:#6b4e0f"/>
+      <stop offset="100%" style="stop-color:#5a3d0a"/>
+    </linearGradient>
+    <filter id="roughness">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise"/>
+      <feDiffuseLighting in="noise" lighting-color="#8b6914" surfaceScale="1">
+        <feDistantLight azimuth="45" elevation="60"/>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+  <!-- Base dirt -->
+  <rect width="64" height="64" fill="url(#dirtGrad)"/>
+  <!-- Cobblestone pattern -->
+  <g fill="#7a5a12" stroke="#5a3d0a" stroke-width="0.5" opacity="0.6">
+    <ellipse cx="10" cy="12" rx="8" ry="6"/>
+    <ellipse cx="30" cy="8" rx="9" ry="5"/>
+    <ellipse cx="52" cy="14" rx="7" ry="6"/>
+    <ellipse cx="8" cy="32" rx="6" ry="8"/>
+    <ellipse cx="28" cy="30" rx="10" ry="7"/>
+    <ellipse cx="50" cy="35" rx="8" ry="6"/>
+    <ellipse cx="12" cy="52" rx="9" ry="6"/>
+    <ellipse cx="35" cy="55" rx="7" ry="5"/>
+    <ellipse cx="55" cy="50" rx="6" ry="7"/>
+  </g>
+  <!-- Worn path marks -->
+  <g stroke="#4a3008" stroke-width="1" opacity="0.3">
+    <line x1="5" y1="32" x2="60" y2="32"/>
+    <line x1="32" y1="5" x2="32" y2="60"/>
+  </g>
+  <!-- Edge shadows -->
+  <rect x="0" y="0" width="4" height="64" fill="url(#dirtGrad)" opacity="0.4"/>
+  <rect x="60" y="0" width="4" height="64" fill="#3a2a05" opacity="0.4"/>
+</svg>
